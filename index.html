@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKSSB Mission Ek Naukri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>JKSSB Mission Ek Naukri</h1>
+            <p>Your dream job is just a step away!</p>
+            <!-- Navigation -->
+            <nav class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#courses">Courses</a>
+                <a href="#resources">Resources</a>
+                <a href="#success">Success Stories</a>
+                <a href="#contact">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <!-- Social Links -->
+            <p>
+                <a href="https://www.youtube.com/@jkssbmissioneknaukri" target="_blank">YouTube</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to JKSSB Mission Ek Naukari</h2>
+            <p>Your ultimate destination for free, comprehensive, and quality online education tailored specifically for JKSSB, JKPSC, NTA Sociology/Social Work, and other competitive exams. Created with the aim of helping aspirants like you secure that dream job, our platform offers expertly crafted lectures designed to simplify learning and maximize success.</p>
+            <a href="https://www.youtube.com/@jkssbmissioneknaukri" class="btn" target="_blank">Watch Free Lectures</a>
+            <a href="https://t.me/jkssb_mission_ek_naukri" class="btn" target="_blank">Join Our Community</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Why Choose JK Mission Ek Naukri?</h2>
+            <img src="about-image.jpg" alt="About Us" style="width:100%; max-width:600px; display:block; margin:auto;">
+            <p>At JK Mission Ek Naukri, we understand the value of your aspirations. Our mission is to provide quality education at zero cost, empowering you to achieve your goals with confidence.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Explore Our Courses</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-book fa-3x"></i>
+                    <h3>JKSSB/JKPSC Preparation</h3>
+                    <a href="#" class="btn" target="_blank">Start Learning</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                    <h3>Sociology/Social Work/Medical Social Worker</h3>
+                    <a href="#" class="btn" target="_blank">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section">
+        <div class="container">
+            <h2>Free Resources for Your Success</h2>
+            <ul>
+                <li><a href="#">Download Syllabus & Notes (PDF)</a></li>
+                <li><a href="#">Practice Quizzes</a></li>
+                <li><a href="#">Weekly Job Updates</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success" class="section">
+        <div class="container">
+            <h2>Our Students’ Success Stories</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="student-photo.jpg" alt="Student Name" style="border-radius: 50%; width: 100px; height: 100px; margin: auto;">
+                    <p>"Thanks to JK Mission Ek Naukri, I cracked JKSSB with ease!"</p>
+                    <p>- Student Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Join Our Growing Family Today!</h2>
+            <p>Your success matters. Let’s make your dreams a reality together!</p>
+            <a href="#" class="btn">Subscribe on YouTube</a>
+            <a href="#" class="btn">Join Our Telegram Group</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 JKSSB Mission Ek Naukri. All rights reserved.</p>
+            <p>
+                <a href="https://www.youtube.com/@jkssbmissioneknaukri" target="_blank">YouTube</a> |
+                <a href="#" target="_blank">Instagram</a> |
+                <a href="#" target="_blank">Telegram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back-to-Top Button -->
+    <button id="backToTop" class="btn" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- JavaScript for Responsive Navigation -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.onscroll = function() {
+            var button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
