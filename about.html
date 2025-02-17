@@ -14,14 +14,14 @@
     <div class="container">
       <h1>JKSSB Mission Ek Naukri</h1>
       <nav class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About Us</a>
-        <a href="courses.html">Courses</a>
-        <a href="resources.html">Resources</a>
-        <a href="success.html">Success Stories</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
-          <i class="fa fa-bars" role="img" aria-label="Toggle Navigation Menu"></i>
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="about.html" class="active" aria-label="About Us">About Us</a>
+        <a href="courses.html" aria-label="Courses">Courses</a>
+        <a href="resources.html" aria-label="Resources">Resources</a>
+        <a href="success.html" aria-label="Success Stories">Success Stories</a>
+        <a href="contact.html" aria-label="Contact Us">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()" aria-label="Toggle Navigation Menu">
+          <i class="fa fa-bars" role="img"></i>
         </a>
       </nav>
     </div>
@@ -41,17 +41,27 @@
     <div class="container">
       <p>&copy; 2025 JKSSB Mission Ek Naukri. All rights reserved.</p>
       <p>
-        <a href="https://www.youtube.com/@jkssbmissioneknaukri" target="_blank">YouTube</a> |
-        <a href="#" target="_blank">Instagram</a> |
-        <a href="#" target="_blank">Telegram</a>
+        <a href="https://www.youtube.com/@jkssbmissioneknaukri" target="_blank" aria-label="YouTube">YouTube</a> |
+        <a href="https://www.instagram.com/jkssbmissioneknaukri" target="_blank" aria-label="Instagram">Instagram</a> |
+        <a href="https://t.me/jkssbmissioneknaukri" target="_blank" aria-label="Telegram">Telegram</a>
       </p>
     </div>
   </footer>
 
   <!-- Back-to-Top Button -->
-  <button id="backToTop" class="btn" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+  <button id="backToTop" class="btn" onclick="scrollToTop()" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
 
   <!-- JavaScript -->
   <script src="js/scripts.js"></script>
+  <script>
+    function toggleNavigation() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 </html>
